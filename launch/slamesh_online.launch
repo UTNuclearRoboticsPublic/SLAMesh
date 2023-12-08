@@ -3,7 +3,7 @@
     <arg name="seq" default = "/00" />
     <arg name="param" default = "" /> <!-- param is used for tuning "$(arg param)" -->
     <arg name="data_path" default = " " />
-    <arg name="result_path" default = "$(find slamesh)/saved_meshes" />
+    <arg name="result_path" default = "$(find slamesh)/saved_meshes/$(arg robot)" />
 
     <rosparam file="$(find slamesh)/config/online.yaml" command="load" />
     <group ns="$(arg robot)">
