@@ -14,7 +14,5 @@
             <param name="file_loc_dataset" value="$(arg data_path)"/>
         </node>
     </group>
-
-    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find slamesh)/config/rviz/slamesh_mesh_tool.rviz" required="false" />
 </launch>
 
